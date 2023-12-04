@@ -8,7 +8,7 @@ import java.util.Optional;
 public class Alerts {
 
 
-    //Alerta que nos permite elegir el modo que jugaremos.
+
     public static String Elige_Modo() {
         String modo = null;
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -36,7 +36,7 @@ public class Alerts {
         return modo;
     }
 
-    //Alerta que nos permite elegir dificultad.
+  
     public static String Elige_Dificultad() {
         String dificultad = null;
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -64,7 +64,7 @@ public class Alerts {
         return dificultad;
     }
 
-    //Alerta mostrada al indicar que queremos abandonar la partida.
+   
     public static Boolean Abandonar_Partida() {
         Boolean respuesta = null;
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -82,7 +82,7 @@ public class Alerts {
         return respuesta;
     }
 
-    //Alerta mostrada al intentar jugar, mientras no está empezada la partida.
+    
     public static void Debes_Empezar_Partida() {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("ERROR");
@@ -91,7 +91,7 @@ public class Alerts {
         alert.showAndWait();
     }
 
-    //Alerta mostrada para anuciar al ganador.
+    
     public  static void Anunciar_Ganador(int ganador) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         if(ganador == 0) {
@@ -105,7 +105,7 @@ public class Alerts {
         alert.showAndWait();
     }
 
-    //Alerta mostrada al empatar.
+  
     public  static void Anunciar_Empate() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("¡EMPATE!");
